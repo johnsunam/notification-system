@@ -1,0 +1,11 @@
+<template name="layout">
+  {{#if currentUser}}
+  {{#if isInRole 'admin'}}
+  {{>admindashboard}}
+  {{else}}
+  {{>userLayout templateName=loggedInTemplate}}
+  {{/if}}
+  {{else}}
+  {{>accountLayout templateName=notloggeInTemplate templatedata=data}}
+  {{/if}}
+</template>

@@ -1,0 +1,44 @@
+.account{
+  margin-top: 10%;
+}
+.button{
+  margin-top: 5%;
+}
+#signup{
+  text-align: center;
+}
+.dashboard{
+    margin-top: 10%;
+  }
+.notification{
+    margin-top: 10%;
+  }
+.num{
+  font-weight: bold;
+}
+.notify-butn{
+  margin: 5%;
+
+}
+textarea{
+  width: 900px;
+  height: 100px;
+  margin: 2%;
+}
+.sub{
+  display: none;
+  margin-left: 50px;
+  margin-right: 50px;
+margin-top: 20px;
+font-size: 14px;
+}
+.date{
+  font-size: x-small;
+  color: gray;
+}
+.fa-cog{
+  text-align: right;
+}
+.setting{
+  margin-top: 5%;
+}

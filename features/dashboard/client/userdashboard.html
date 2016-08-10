@@ -1,0 +1,55 @@
+<template name="userdashboard">
+  <div class="bar bar-header bar-balanced">
+    <div class="row">
+      <h1 class="title">Notification</h1>
+      <a href="#" class="button">
+        <i  class="fa fa-cog"></i>
+      </a>
+    </div>
+  </div>
+<div class="tabs-striped tabs-color-assertive">
+<div class="tabs">
+
+  <a class="tab-item" href="#">
+  <i class="fa fa-home">
+{{#if load}}
+{{#if notify}}
+    <span class="num badge badge-positive ">
+       {{notify}}
+   </span>
+   {{/if}}
+{{/if}}
+ </i>
+  </a>
+  <a class="tab-item  active notifications" href="#">
+    <i class="fa fa-bell"></i>
+  </a>
+  <a class="tab-item" href="#">
+    <i class="fa fa-cog"></i>
+    Settings
+  </a>
+</div>
+</div>
+  <div class="card notification">
+    {{#if load}}
+    <div class="list">
+      {{#each records}}
+      <a href="#" class="item element" id={{parentId}}>
+        <div id={{parentId}}>
+        {{rec.title}}
+        </div>
+        <div class="date" id={{parentId}}>
+          {{date}}
+        </div>
+      </a>
+      <div id={{rec._id}} class="sub">
+        {{rec.description}}
+      </div>
+      {{/each}}
+    </div>
+
+{{else}}
+Loading...
+{{/if}}
+  </div>
+</template>
